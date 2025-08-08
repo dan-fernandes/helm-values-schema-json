@@ -21,6 +21,7 @@ func main() {
 	cmd.SetErr(os.Stderr)
 	if err := cmd.Execute(); err != nil {
 		fmt.Fprintln(os.Stderr, "Error:", err)
+		return err
 	}
 }
 
